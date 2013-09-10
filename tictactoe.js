@@ -27,7 +27,7 @@ function takeTurn(row, col) {
 
 	// check if it's a valid pick
 	if (isPickValid(row, col) == false) {
-		console.log("Invalid pick, try again.");
+		alert("Invalid pick, try again.");
 		return;
 	}
 
@@ -62,6 +62,9 @@ function isPickValid(row, col) {
 
 function showPlayersPick(row, col) {
 	grid[row][col] = currentPlayer;
+   var element =document.getElementById("cell-"+row +"-"+col);
+   element.innerHTML=currentPlayer;
+   element.className="player" + currentPlayer;
 }
 
 function getWinner() {
@@ -90,8 +93,7 @@ function getWinner() {
 		return grid [0][2];
 	}
 	// check for free moves (tie)
-
-
+    
 	return false;
 }
 
@@ -101,8 +103,8 @@ function checkForWinner() {
 	if (winner == 'X' ){
 		alert('Player X Won!');
 		isGameOver = true;
-	} else if (winner == 'Y') {
-		alert('Player Y Win!');
+	} else if (winner == 'O') {
+		alert('Player O Won!');
 		isGameOver = true;
 	} else if (winner == 'T') {
 		alert('Tie game!');

@@ -6,32 +6,36 @@
 </head>
 
 <body>
+  <div align="center">
 
-<h1>Tic Tac Toe</h1>
+<h1>Tic Tac Toe</h1> 
+
+    <input type="button" value="New Game!" onClick="window.location.reload()">
+ 
 
  	<table>
  		<tbody>
            <tr>
-           		<td>X</td>
-           		<td>X</td>
-           		<td>X</td>	
+           		<td id="cell-0-0" onclick ="takeTurn(0,0);"></td>
+           		<td id="cell-0-1" onclick ="takeTurn(0,1);"></td>
+           		<td id="cell-0-2" onclick ="takeTurn(0,2);"></td>	
            </tr>
 
            <tr>
-           		<td>X</td>
-           		<td>X</td>
-           		<td>X</td>
+           		<td id="cell-1-0" onclick ="takeTurn(1,0);"></td>
+           		<td id="cell-1-1" onclick ="takeTurn(1,1);"></td>
+           		<td id="cell-1-2" onclick ="takeTurn(1,2);"></td>
            </tr>
 
            <tr>
-           		<td>X</td>
-           		<td>X</td>
-           		<td>X</td>
+           		<td id="cell-2-0" onclick ="takeTurn(2,0);"></td>
+           		<td id="cell-2-1" onclick ="takeTurn(2,1);"></td>
+           		<td id="cell-2-2" onclick ="takeTurn(2,2);"></td>
            </tr>
 
  		</tbody>	
  	</table>
 
-
+ </div>
 </body>
 </html>

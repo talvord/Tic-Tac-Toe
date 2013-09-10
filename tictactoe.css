@@ -1,15 +1,59 @@
+h1 {
+	margin-right: 100px;
+}
+
+div {
+  padding-top: 50px;
+  border: 0;
+}
+
 table {
-	width: 400px;
-	border-collapse:collapse;
+
+    border-style: hidden;
+	border-color: white;
+	border-collapse: collapse;
+	background-color: white;
+	margin-top: 20px;
+    
 }
 
 td {
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	padding:5px;
 	padding:5px;border:1px solid black;
+    text-align:center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+td:hover {
+	outline: yellow solid 5px;
 }
 
 tr {
 	border: 1px solid black;
-
+	
 }
+
+input {
+	color:white;
+	font-family: Verdana;
+	background-color: black;
+	font-size: 17px;
+    margin-left: 300px;
+    margin-top: -50px;
+    margin-right: 90px;
+    border-radius: 4px;
+}
+
+.playerX {
+  color: white;
+  background-color: red;
+}
+
+.playerO {
+  color: white;
+  background-color: blue;
+}
+
